@@ -1,0 +1,160 @@
+Crie as Views abaixo:
+
+1- Selecionar as cidades do Acre em Ordem Crescente:
+CREATE VIEW VW_CIDADE_PERNAMBUCO AS
+
+	SELECT * FROM CIDADE
+		
+		WHERE CODIGO_ESTADO = 1
+SELECT * FROM VW_CIDADE_ACRE  
+
+	ORDER BY NOME ASC;
+
+2- Selecionar as cidades de Pernambuco em ordem decrescente
+CREATE VIEW VW_CIDADE_PERNAMBUCO AS
+
+	SELECT * FROM CIDADE
+
+		WHERE CODIGO_ESTADO = 17;
+SELECT * FROM VW_CIDADE_PERNAMBUCO
+  
+	ORDER BY NOME DESC;
+
+3- Selecionar todas as cidades do paraná em ordem crescente
+CREATE VIEW VW_CIDADE_PARANA AS
+
+
+	SELECT * FROM CIDADE
+
+
+		WHERE CODIGO_ESTADO = 16;
+SELECT * FROM VW_CIDADE_PARANA
+
+  
+	ORDER BY NOME ASC;
+
+4- Selecionar todas as cidades do distrito federal em ordem decrescente
+CREATE VIEW VW_CIDADE_DISTRITOFEDERAL AS
+
+
+	SELECT * FROM CIDADE
+
+
+		WHERE CODIGO_ESTADO = 7;
+
+SELECT * FROM VW_CIDADE_DISTRITOFEDERAL
+
+  
+	ORDER BY NOME DESC;
+
+5- Selecionar as cidades de são paulo ou minas gerais em ordem decrescente
+CREATE VIEW VW_CIDADE_SAOPAULO AS
+
+
+	SELECT * FROM CIDADE
+
+
+		WHERE CODIGO_ESTADO = 25;
+
+SELECT * FROM VW_CIDADE_SAOPAULO
+ 
+	ORDER BY NOME DESC;
+
+CREATE VIEW VW_CIDADE_MINASGERAIS AS
+
+
+	SELECT * FROM CIDADE
+
+
+		WHERE CODIGO_ESTADO = 13;
+
+SELECT * FROM VW_CIDADE_MINASGERAIS
+
+
+  
+	ORDER BY NOME DESC;
+
+6- Selecionar as cidades de tocantins ou alagoas em ordem crescente
+CREATE VIEW VW_CIDADE_TOCANTINS AS
+
+
+
+	SELECT * FROM CIDADE
+
+
+
+		WHERE CODIGO_ESTADO = 27;
+
+
+SELECT * FROM VW_CIDADE_TOCANTINS
+
+
+
+  
+	ORDER BY NOME ASC;
+
+
+CREATE VIEW VW_CIDADE_ALAGOAS AS
+
+
+
+	SELECT * FROM CIDADE
+
+
+
+		WHERE CODIGO_ESTADO = 2;
+      
+SELECT * FROM VW_CIDADE_ALAGOAS
+
+
+  
+	ORDER BY NOME ASC;  
+
+
+
+7- Selecionar todas as cidades do brasil em ordem decrescente
+CREATE VIEW VW_CIDADE_BRASIL AS
+
+
+
+
+	SELECT * FROM CIDADE
+
+
+
+SELECT * FROM VW_CIDADE_BRASIL
+
+
+
+ 
+	ORDER BY NOME DESC;  
+
+
+
+8- Contar a quantidade de cidades do estado de são paulo.
+SELECT COUNT (*)
+
+	FROM VW_CIDADE_SAOPAULO
+
+WHERE CODIGO_ESTADO = 19;
+    
+
+9- Contar a quantidade de cidades do estado do rio de janeiro.
+CREATE VIEW VW_CIDADE_RIODEJANEIRO AS
+
+
+
+
+	SELECT * FROM CIDADE
+
+
+
+
+		WHERE CODIGO_ESTADO = 17;
+ 
+  
+SELECT COUNT (*)
+
+	FROM VW_CIDADE_RIODEJANEIRO
+WHERE CODIGO_ESTADO = 17;
+   

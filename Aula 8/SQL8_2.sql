@@ -1,0 +1,14 @@
+SELECT A.NOME AS ALUNO,
+	   D.NOME AS DISCIPLINA,
+       N.NOTA1,
+       N.NOTA2,
+       N.NOTA3
+       
+	FROM NOTA N, ALUNO A, DISCIPLINA D
+WHERE N.RA = A.RA
+	AND N.IDDISC = D.IDDISC
+    AND (N.NOTA1 >= 9
+    AND N.NOTA2 >= 9
+    AND N.NOTA3 >= 9);
+	
+    

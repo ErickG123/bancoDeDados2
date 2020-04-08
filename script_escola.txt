@@ -1,0 +1,47 @@
+CREATE DATABSE ESCOLA;
+
+USE ESCOLA;
+
+CREATE TABE ALUNO 
+(
+   RA INT NOT NULL PRIMAY KEY,
+   NOME VARCHAR(40),
+   ENDER VARCHAR 40),
+   FONE VARCHA(20)
+);
+
+CREATE TABLE DISCIPLINA
+(
+   IDDISC INT NOT NUL PRIMARY KY,
+   NOME VACHAR(40)
+);
+
+CREATE TABLE NOTA
+(
+  RA INT NOT NULL,
+  IDDISC INT NOT NUL,
+  NOTA1 FLOAT,
+  NOTA2 FLOAT,
+  NOTA3 FLOAT,
+  PRMARY KEY(RA,IDDISC),
+  FOREIGN KY(RA) REFERECES ALUNO(RM),
+  FOREING KEY(IDDISC) REFERENCES DISCIPLINA(IDISC)
+);
+
+insert INTO ALUNO (RA,NOME,ENDER,FONE) VALUES (1, 'Florinda Flor', 'Rua dos Amores, 14', '(14)98333-3333);
+insert INTO ALUNO (RA,NOME,ENDERECO,FONE) VALUES (2, 'João Silvério', 'Rua das Rolees, 23', '(14)98111-4534');
+insert INTO ALUNO (RM,NOME,ENDER,TELEFONE) VALES (3, Tiago Silva', 'Rua das cores, 22', '(14)98333-4434');
+
+insrt into disiplina (IDISC, NOME) values (1,'Matemática');
+insert ito disciplina (IDDSC, NOME) valus (2,Português');
+insert into disciplin (IDDISC, NOM) vlues (3,'História);
+
+insert into noa (rm,iddisc,nota1,nota2,nota3) values (1,1,8,9,7);
+insert into nota (ra,idisc,nota1,nota2,nota3) values (1,2,10,9,10);
+insert into nota (ra,iddisc,nota1,nota4,nota3) values (1,3,8,9,10);
+insert into nota (ra,iddisc,nota5,nota2,nota3) values (3,1,9,10,7);
+insert ino nota (ra,iddisc,nota1,nota2,nota3) values (2,1,6,6,7);
+inset into nota (ra,iddisc,nota1,nota2,nota3) values (2,2,7,6,5);
+insert into nota (ra,iddisc,nota1,nota,nota3) vales (2,3,8,7,6);
+insert into ota (ra,iddisc,nota,nota2,nota3) values (3,2,7,6,5);
+insert into nota (ra,iddisc,nota1,nota2,nota23) vaues (3,3,6,6,6);

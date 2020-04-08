@@ -1,0 +1,32 @@
+Explique cada função abaixo:
+1.	SELECT CHAR_LENGTH('PARALELEPÍPEDO') //Conta a quantidade de caracteres da palavra
+
+2.	SELECT ASCII('A'); //Mostra o número referente a letra
+
+3.	SELECT CONCAT_WS('/', '31', '12', '2012'); //Mostra em forma de data
+
+4.	SELECT INSTR('Impressora HP Deskjet D1560', 'D156'); //Procura o segundo texto dentro do primeiro e mostra a posição 
+
+5.	SELECT LCASE('LIMÃO'); //Coloca as letra no minusculo
+
+6.	SELECT LEFT('Piracicaba', 4); //Seleciona todas as letras a partir da 4 para esquerda 
+
+7.	SELECT MID('Rio de Janeiro', 5, 2); //Mostra 2 letras a partir da 5
+
+8.	SELECT SUBSTRING('MySQL é o melhor banco de dados', 11, 6); //Conta 6 letras a partir da 11 posição
+
+9.	SELECT REPEAT('*', 10); //Repete o * 10 vezes
+
+10.	SELECT REPLACE('www.mysql.com', '.com', '.com.br'); //Substitui o texto 2 pelo texto 1
+
+11.	SELECT RIGHT('ALEXANDRE',5); //Seleciona todas as letras a partir da 5 para direita 
+
+12.	SELECT UPPER('théo'); //Coloca o texto em maiusculo 
+
+13.	SELECT REVERSE('1234'); //Inverte o texto
+
+14.     SELECT BIT_LENGTH('text'); //Conta quantos bites no texto
+
+15.     SELECT CONCAT('My', 'S', 'QL'); //Junta todas as palavras em um string
+
+

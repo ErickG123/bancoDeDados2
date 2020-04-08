@@ -1,0 +1,188 @@
+Execute o script script_estados_cidades no WorkBench.
+
+1 - 
+
+a-selecionar todas as cidades de são paulo que terminam com a letra "L"
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like '%L'
+    and		e.sigla = 'SP'
+
+b-selecionar todas as cidades do maranhão que comecem com a letra "T".
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like 'T%'
+    and		e.sigla = 'MA'
+
+c-selecionar todas as cidades do acre que comecem com a letra "A".
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like 'A%'
+    and		e.nome = 'Acre'
+
+d-selecionar todas as cidades do tocantins que comecem com a letra "B" e terminem com a letra "O".
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like 'B%O'
+    and		e.nome = 'Tocantins'
+
+e-selecionar todas as cidades do paraná que comecem com a letra "T" e terminam com a letra "A".
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like 'T%A'
+    and		e.nome = 'Paraná'
+
+f-selecionar todas as cidades do rio grande do sul que contenham a palavra "Monte".
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like '%Monte%'
+    and		e.sigla = 'RS'
+
+g-selecionar todas as cidades de santa catarina que contenham a palavra "Santo".
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like '%Santo%'
+    and		e.sigla = 'SC'
+
+h-selecionar todas as cidades do mato grosso do sul que contenham a palavra "Rio".
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like '%Rio%'
+    and		e.sigla = 'MS'
+
+i-selecionar todas as cidades do brasil que tenham "Rio" no nome.
+select 		c.nome as cidade,
+			e.nome as estado,
+			e.sigla
+	from	cidade c, estado e
+	where 	c.codigo_estado = e.codigo_estado
+    and		c.nome like '%Rio%'
+
+j-Contar todas as cidades do estado de sp.
+select count(*)
+	from cidade
+where codigo_estado = 25
+
+k-Contar todas as cidades do estado de mg.
+select count(*)
+	from cidade
+where codigo_estado = 13
+
+l-Contar todas as cidades do estado de rs.
+select count(*)
+	from cidade
+where codigo_estado = 21
+
+m-Contar todas as cidades do estado de rn.
+select count(*)
+	from cidade
+where codigo_estado = 20
+
+n-Contar todas as cidades do estado de to.
+select count(*)
+	from cidade
+where codigo_estado = 27
+
+o-Contar todas as cidades do brasil.
+select count(*)
+	from cidade
+
+
+------------------------------------------------------------------------------------------
+2 - 
+
+a- Selecionar as cidades de Alagoas em ordem crescente
+select *
+	from cidade 
+where codigo_estado = 2
+ order by nome
+
+b- Selecionar as cidades de Pernambuco em ordem decrescente
+select *
+	from cidade 
+where codigo_estado = 17
+ order by nome desc
+
+c- Selecionar todas as cidades do paraná em ordem crescente
+select *
+	from cidade 
+where codigo_estado = 16
+ order by nome 
+
+d- Selecionar todas as cidades do distrito federal em ordem decrescente
+select *
+	from cidade 
+where codigo_estado = 7 
+order by nome desc
+
+e- Selecionar as cidades de são paulo ou minas gerais em ordem decrescente
+select *
+	from cidade 
+where codigo_estado = 13 
+order by nome desc
+
+f- Selecionar as cidades de tocantins ou alagoas em ordem crescente
+select *
+	from cidade 
+where codigo_estado = 27
+ order by nome 
+
+g- Selecionar todas as cidades do brasil em ordem decrescente
+select *
+	from cidade
+ order by nome desc
+
+------------------------------------------------------------------------------------------
+3 - O que significa a sigla SQL?
+Structured Query Language
+
+4 - Qual o objetivo da linguagem SQL?
+A "Linguagem Estruturada de Consultas" (SQL, traduzida para o português) é utilizada para interagir com o SGBD e executar várias tarefas como inserir e alterar registros, criar objetos no banco de dados, gerenciar usuário, consultar informações, controlar transações, etc.
+
+5 - Defina, para a linguagem SQL, o que signfica DML, DDL e DCL.
+DDL – Data Definition Language ( DDL) são usadas para definir a estrutura de banco de dados ou esquema. Alguns exemplos:
+
+CREATE- para criar objetos no banco de dados
+ALTER – altera a estrutura da base de dados
+TRUNCATE – remover todos os registros de uma tabela, incluindo todos os espaços alocados para os registros são removidos
+COMMENT – adicionar comentários ao dicionário de dados
+RENAME – para renomear um objeto
+
+DML – Data Manipulation Language ( DML) são utilizados para o gerenciamento de dados dentro de objetos do banco. Alguns exemplos:
+
+SELECT- recuperar dados do banco de dados
+INSERT – inserir dados em uma tabela
+UPDATE – atualiza os dados existentes em uma tabela
+DELETE – exclui registros de uma tabela,
+CALL – chamar um subprograma PL / SQL
+EXPLAIN PLAN – explicar o caminho de acesso aos dados
+LOCK TABLE – controle de concorrência
+
+DCL – Data Control Language ( DCL ) declarações. Alguns exemplos:
+
+GRANT – atribui privilégios de acesso do usuário a objetos do banco de dados
+REVOKE – remove os privilégios de acesso aos objetos obtidos com o comando GRANT

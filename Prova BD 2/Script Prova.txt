@@ -1,0 +1,89 @@
+-  Utilizando o recurso de filtragem de dados em banco de dados, comando Select e suas cláusulas, pesquise como citado abaixo: 
+
+A.      apenas os estados da região Sul
+SELECT * FROM ESTADO
+ WHERE CODIGO_ESTADO IN (16,21,24);
+
+B.      apenas os estados da região Sudeste
+SELECT * FROM ESTADO 
+WHERE CODIGO_ESTADO IN (8,13,19,25);
+
+C.      apenas os estados que começam com a letra "A"
+SELECT * FROM ESTADO 
+WHERE NOME LIKE 'A%';
+
+D.      apenas os estados que terminem com a letra "O"
+SELECT * FROM ESTADO 
+WHERE NOME LIKE '%O';
+ 
+
+E.      apenas os estados que tenham "MA" em qualquer parte do nome
+SELECT * FROM ESTADO 
+WHERE NOME LIKE '%MA%';
+
+F.      apenas cidades do estado de SP.
+SELECT * FROM CIDADE 
+WHERE CODIGO_ESTADO=25;
+ 
+
+G.      apenas cidades do estado AC.
+SELECT * FROM CIDADE
+ WHERE CODIGO_ESTADO=1;
+
+H.      apenas  cidades de MG.
+SELECT * FROM CIDADE 
+WHERE CODIGO_ESTADO=13;
+ 
+
+I.      apenas cidades que terminem com a letra S.
+SELECT * FROM CIDADE 
+WHERE NOME LIKE '%S';
+ 
+
+J.      apenas cidades que comecem com a letra T.
+SELECT * FROM CIDADE 
+WHERE NOME LIKE '%S';
+ 
+
+K.      apenas cidades que contenham SERRA no nome.
+SELECT * FROM CIDADE 
+WHERE NOME LIKE '%SERRA%';
+
+L.      apenas cidades que contenham LANDIA no nome.
+SELECT * FROM CIDADE 
+WHERE NOME LIKE '%LANDIA%';
+
+M.    	apenas cidades que não tenham a letra A em seu nome.
+SELECT * FROM CIDADE 
+WHERE NOME LIKE '%LANDIA%';
+
+N.      apenas cidades que comecem com a palavra SANTO.
+SELECT * FROM CIDADE 
+WHERE NOME LIKE 'SANTO%';
+
+O.      apenas cidades que terminem com a palavra SUL.
+SELECT * FROM CIDADE 
+WHERE NOME LIKE '%SUL';
+
+P.      todas as cidades do maranhão que comecem com a letra V.
+SELECT * FROM CIDAD E
+WHERE CODIGO_ESTADO = 10
+ AND NOME LIKE 'V%';
+
+R.      contar apenas as cidades do estado de sp. comando count(*)
+SELECT COUNT(*) FROM CIDADE WHERE CODIGO_ESTADO = 25;
+
+S.      contar apenas as cidades do estado de pi.
+SELECT COUNT(*) FROM CIDADE WHERE CODIGO_ESTADO = 18;
+
+T.      contar as cidades do estado de rs e rn juntos.
+SELECT COUNT(*) FROM CIDADE WHERE CODIGO_ESTADO IN (20,21)
+
+U.      contas as cidades do estado de mt e ms juntos.
+SELECT COUNT(*) FROM CIDADE WHERE CODIGO_ESTADO IN (11,12)
+
+V.      contar as cidades de TO, RO e RR juntos.
+SELECT COUNT(*) FROM CIDADE WHERE CODIGO_ESTADO IN (22,23,27)
+ 
+W.      contar todas as cidades do Brasil.
+SELECT COUNT(*) FROM CIDADE

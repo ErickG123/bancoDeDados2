@@ -1,0 +1,14 @@
+DELIMITER $$
+	CREATE procedure LISTA_MG_SC (IN OP INTEGER)
+		BEGIN
+			IF OP = 3 THEN
+				SELECT * FROM CIDADE WHERE CODIGO_ESTADO = 13;
+            ELSE
+				IF OP = 4 THEN 
+					SELECT * FROM CIDADE WHERE CODIGO_ESTADO = 24;
+				END IF;
+			END IF;
+		END $$
+DELIMITER $$
+                
+                

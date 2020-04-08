@@ -1,0 +1,40 @@
+Execute o script script_estados_cidades no WorkBench.
+
+
+1 - 
+
+a-selecionar todas as cidades de são paulo que terminam com a letra "L"
+b-selecionar todas as cidades do maranhão que comecem com a letra "T".
+b-selecionar todas as cidades do acre que comecem com a letra "A".
+c-selecionar todas as cidades do tocantins que comecem com a letra "B" e terminem com a letra "O".
+d-selecionar todas as cidades do paraná que comecem com a letra "T" e terminam com a letra "A".
+e-selecionar todas as cidades do rio grande do sul que contenham a palavra "Monte".
+f-selecionar todas as cidades de santa catarina que contenham a palavra "Santo".
+g-selecionar todas as cidades do mato grosso do sul que contenham a palavra "Rio".
+h-selecionar todas as cidades do brasil que tenham "Rio" no nome.
+i-Contar todas as cidades do estado de sp.
+j-Contar todas as cidades do estado de mg.
+k-Contar todas as cidades do estado de rs.
+l-Contar todas as cidades do estado de rn.
+m-Contar todas as cidades do estado de to.
+n-Contar todas as cidades do brasil.
+
+------------------------------------------------------------------------------------------
+
+2 - 
+
+a- Selecionar as cidades de Alagoas em ordem crescente
+b- Selecionar as cidades de Pernambuco em ordem decrescente
+c- Selecionar todas as cidades do paraná em ordem crescente
+d- Selecionar todas as cidades do distrito federal em ordem decrescente
+e- Selecionar as cidades de são paulo ou minas gerais em ordem decrescente
+f- Selecionar as cidades de tocantins ou alagoas em ordem crescente
+g- Selecionar todas as cidades do brasil em ordem decrescente
+
+------------------------------------------------------------------------------------------
+
+3 - O que significa a sigla SQL?
+
+4 - Qual o objetivo da linguagem SQL?
+
+5 - Defina, para a linguagem SQL, o que signfica DML, DDL e DCL.
